@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" data-beasties-container><head>
+export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta charset="utf-8">
   <title>Frontend</title>
   <base href="/performance-tracker-frontend/">
@@ -35,4 +35,4 @@
 <link rel="modulepreload" href="chunk-O5VMAIWG.js">
 
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"0":[{"i":"c4021227496","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"0":[{"i":"c4021227496","r":1}]}}]}</script></body></html>`;
