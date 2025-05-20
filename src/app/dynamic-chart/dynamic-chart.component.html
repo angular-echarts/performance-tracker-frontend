@@ -1,0 +1,48 @@
+<!-- Memory Chart Heading -->
+<h2>Memory Usage</h2>
+
+<!-- Memory Chart Controls -->
+<div class="chart-controls">
+  <label for="memoryTypeSelect">Select Memory Type: </label>
+  <select id="memoryTypeSelect" [value]="memoryType" (change)="handleMemoryTypeChange($event)">
+    <option *ngFor="let type of availableMemoryTypes" [value]="type.value">
+      {{ type.label }}
+    </option>
+  </select>
+
+  <button (click)="loadMemoryChartData()">🗘</button>
+</div>
+
+<!-- Memory Chart Description -->
+<p class="chart-description">
+  This chart displays memory usage trends based on the selected memory type. Use it to monitor how system memory is
+  being consumed over time and identify any potential memory bottlenecks.
+</p>
+
+<!-- Memory Chart -->
+<div *ngIf="memoryLoading">Loading Memory Chart...</div>
+<div *ngIf="memoryError">{{ memoryError }}</div>
+<div *ngIf="!memoryLoading && !memoryError">
+  <div echarts [options]="memoryChartOption" class="chart-container"></div>
+</div>
+
+<!-- CPU Chart Heading -->
+<h2>CPU Usage</h2>
+
+<!-- CPU Chart Description -->
+<p class="chart-description">
+  This chart shows CPU utilization across different cores or processes. It helps visualize processing load and assists
+  in diagnosing performance issues or system overload.
+</p>
+
+<!-- CPU Chart Controls -->
+<div class="chart-controls">
+  <button (click)="loadCpuChartData()">🗘</button>
+</div>
+
+<!-- CPU Chart -->
+<div *ngIf="cpuLoading">Loading CPU Chart...</div>
+<div *ngIf="cpuError">{{ cpuError }}</div>
+<div *ngIf="!cpuLoading && !cpuError">
+  <div echarts [options]="cpuChartOption" class="chart-container"></div>
+</div>
