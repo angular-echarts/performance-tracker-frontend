@@ -19,3 +19,12 @@
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 12px 60px rgba(255, 79, 129, 0.3);
 }
+
+/* Cards Wrapper */
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
