@@ -8,7 +8,7 @@
 
 ## 🌐 Live Demo
 
-🚀 **Experience it here**: [🔗 Click Here](https://angular-echarts.github.io/performance-tracker-frontend/)  
+🚀 **Experience it here**: [🔗 Click Here](https://bunny-ilink.github.io/performance-tracker/)  
 🖥️ _(Best viewed on desktop in a modern browser!)_
 
 ---
