@@ -4,8 +4,8 @@ import { catchError, throwError, map } from "rxjs";
 
 @Injectable({ providedIn: 'root' })
 export class PerformanceService {
-  private memoryUrl = 'https://performance-tracker-service.onrender.com/api/memorymetrics/'; // Adjust the URL as needed
-  private cpuUrl = 'https://performance-tracker-service.onrender.com/api/cpumetrics/'; // Adjust the URL as needed
+  private memoryUrl = 'https://performance-tracker-hsk6.onrender.com/api/memorymetrics/'; // Adjust the URL as needed
+  private cpuUrl = 'https://performance-tracker-hsk6.onrender.com/api/cpumetrics/'; // Adjust the URL as needed
 
 
   constructor(private http: HttpClient) { }
