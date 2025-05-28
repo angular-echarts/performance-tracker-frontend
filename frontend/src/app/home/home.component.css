@@ -1,0 +1,30 @@
+/* Live API Integration card */
+.data-card {
+    width: 340px;
+    padding: 2rem;
+    border-radius: 16px;
+    background: linear-gradient(160deg, #1a1a2e, #16213e);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    text-align: left;
+    color: #f5f5f5;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease-in-out;
+    margin-top: 40px;
+}
+
+.data-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 60px rgba(255, 79, 129, 0.3);
+}
+
+/* Cards Wrapper */
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}

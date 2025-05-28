@@ -1,0 +1,20 @@
+<app-header></app-header>
+<app-info></app-info>
+
+<div class="card-wrapper">
+    <div class="data-card" (click)="navigateTo('dynamic')">
+        <h3 class="card-title">🔄 Live API Integrations</h3>
+        <p class="card-description">
+            Connect with real-time APIs to visualize live CPU and RAM usage
+        </p>
+        <span class="card-action"><strong>Explore Dynamic Charts →</strong></span>
+    </div>
+
+    <div class="data-card" (click)="navigateTo('static')">
+        <h3 class="card-title">🔄 Static Data</h3>
+        <p class="card-description">
+            Visualize RCB's IPL winning probabilities over 18 years.
+        </p>
+        <span class="card-action"><strong>Explore Dynamic Charts →</strong></span>
+    </div>
+</div>
