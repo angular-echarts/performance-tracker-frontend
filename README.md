@@ -57,7 +57,7 @@
 1. **📥 Clone the repo**
 
 ```bash
-git clone https://github.com/angular-echarts/performance-tracker-frontend.git
+git clone https://github.com/bunny-iLink/performance-tracker.git
 cd performance-tracker-frontend
 ```
 
